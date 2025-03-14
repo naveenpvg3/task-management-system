@@ -1,0 +1,96 @@
+/* src/app/task-list/task-list.component.css */
+.task-list-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.task-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #3f51b5;
+}
+
+.filter-card {
+    margin-bottom: 20px;
+}
+
+.filter-field {
+    width: 100%;
+}
+
+.table-container {
+    position: relative;
+    overflow: auto;
+    border-radius: 4px;
+}
+
+.task-table {
+    width: 100%;
+}
+
+.description-cell {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.error-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.no-data-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.no-data-message mat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.mat-column-id {
+    flex: 0 0 10%;
+}
+
+.mat-column-title {
+    flex: 0 0 20%;
+}
+
+.mat-column-description {
+    flex: 0 0 40%;
+}
+
+.mat-column-status {
+    flex: 0 0 15%;
+}
+
+.mat-column-actions {
+    flex: 0 0 15%;
+    justify-content: center;
+}
+
+/* Make sure the edit dialog component gets updated with task data */
+.task-create-dialog-component .mat-dialog-title {
+    margin-bottom: 16px;
+}
