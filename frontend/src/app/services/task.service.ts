@@ -14,7 +14,7 @@ export interface Task {
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'http://localhost:8080/tasks'; // Spring Boot API
+  private apiUrl = 'http://18.227.140.123:8080/tasks'; // Spring Boot API
 
   constructor(private http: HttpClient) { }
 
